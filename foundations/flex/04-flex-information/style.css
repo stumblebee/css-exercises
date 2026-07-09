@@ -1,5 +1,8 @@
 body {
   font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 img {
@@ -10,6 +13,8 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+  display: flex;
+  justify-content: center;
 }
 
 /* do not edit this footer */
@@ -24,3 +29,23 @@ img {
   justify-content: center;
   background: #eee;
 }
+
+.plant-container {
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+}
+
+.plant-item {
+  flex: 0 0 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text {
+  text-align: center;
+}
+
+/* text-align property is inherited by all descendant elements, not just direct children. Could have applied it to body element. */
+/* text-align also applies to all inline content, not just text. Images are also affected. */
